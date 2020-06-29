@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CC20120-853F-4C7D-B384-44EBA1874703}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Administration_Tool.My.MyApplication</StartupObject>
+    <RootNamespace>Administration_Tool</RootNamespace>
+    <AssemblyName>Administration Tool</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Administration Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Administration Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DR.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrowserForm.Designer.vb">
+      <DependentUpon>BrowserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivRPUserRecordsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DivRPUserRecordsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DivRPUserRecordsDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DivRPUserRecordsDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditGlobalRecordForm.Designer.vb">
+      <DependentUpon>EditGlobalRecordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditGlobalRecordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLocalRecordForm.Designer.vb">
+      <DependentUpon>EditLocalRecordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditLocalRecordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditNoteForm.Designer.vb">
+      <DependentUpon>EditNoteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditNoteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalPlayerRecordsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalPlayerRecordsForm.Designer.vb">
+      <DependentUpon>GlobalPlayerRecordsForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalRecordNotesForm.Designer.vb">
+      <DependentUpon>GlobalRecordNotesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalRecordNotesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalRecordNotesForm.Designer.vb">
+      <DependentUpon>LocalRecordNotesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocalRecordNotesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalRecordsForm.Designer.vb">
+      <DependentUpon>LocalRecordsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocalRecordsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewGlobalRecordForm.Designer.vb">
+      <DependentUpon>NewGlobalRecordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewGlobalRecordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLocalRecordForm.Designer.vb">
+      <DependentUpon>NewLocalRecordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewLocalRecordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerAPIForm.Designer.vb">
+      <DependentUpon>PlayerAPIForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerAPIForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TempNotesForm.Designer.vb">
+      <DependentUpon>TempNotesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TempNotesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BrowserForm.resx">
+      <DependentUpon>BrowserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditGlobalRecordForm.resx">
+      <DependentUpon>EditGlobalRecordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLocalRecordForm.resx">
+      <DependentUpon>EditLocalRecordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditNoteForm.resx">
+      <DependentUpon>EditNoteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalPlayerRecordsForm.resx">
+      <DependentUpon>GlobalPlayerRecordsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalRecordNotesForm.resx">
+      <DependentUpon>GlobalRecordNotesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalRecordNotesForm.resx">
+      <DependentUpon>LocalRecordNotesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalRecordsForm.resx">
+      <DependentUpon>LocalRecordsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGlobalRecordForm.resx">
+      <DependentUpon>NewGlobalRecordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLocalRecordForm.resx">
+      <DependentUpon>NewLocalRecordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerAPIForm.resx">
+      <DependentUpon>PlayerAPIForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempNotesForm.resx">
+      <DependentUpon>TempNotesForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DivRPUserRecordsDataSet.xsc">
+      <DependentUpon>DivRPUserRecordsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DivRPUserRecordsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DivRPUserRecordsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DivRPUserRecordsDataSet.xss">
+      <DependentUpon>DivRPUserRecordsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DivRPUserRecordsDataSet11.xsc">
+      <DependentUpon>DivRPUserRecordsDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DivRPUserRecordsDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DivRPUserRecordsDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DivRPUserRecordsDataSet11.xss">
+      <DependentUpon>DivRPUserRecordsDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DR.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
